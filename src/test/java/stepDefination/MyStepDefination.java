@@ -25,6 +25,8 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class MyStepDefination extends Utils {
+	
+	
 	RequestSpecification res;
 	// ResponseSpecification res;
 	Response response;
@@ -35,6 +37,7 @@ public class MyStepDefination extends Utils {
 		// Write code here that turns the phrase above into concrete actions
 
 		System.out.println("Hello");
+		System.out.println("Hello1");
 		res = given().spec(requestSpecification()).body(t.addPlace(name, language, address));
 		System.out.println("Kumar");
 
